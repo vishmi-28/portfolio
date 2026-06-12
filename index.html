@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishmiga Shree R | Web Developer & Student Portfolio</title>
+    <meta name="description" content="Portfolio of Vishmiga Shree R, Computer Science Engineering Student and Web Developer. Specializing in HTML, CSS, JavaScript, Java, and modern web technologies.">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts: Outfit and Inter for modern, premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for sleek modern icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-mode">
+
+    <!-- Background Particles Canvas -->
+    <div class="particles-container">
+        <canvas id="particles-canvas"></canvas>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header id="navbar">
+        <div class="nav-content">
+            <a href="#hero" class="logo">Vishmiga<span class="accent">.</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#leadership">Leadership</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle light/dark theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav" id="mobile-nav">
+        <button class="close-btn" id="close-btn" aria-label="Close Navigation Menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#leadership">Leadership</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-wrapper">
+            <div class="hero-text fade-in-up">
+                <span class="greeting">Hello World, I'm</span>
+                <h1 class="hero-title">Vishmiga Shree R</h1>
+                <h2 class="typing-container"><span id="typing-text"></span><span class="cursor">|</span></h2>
+                <p class="hero-desc">
+                    Passionate Computer Science student focused on building modern web applications and creating impactful digital experiences through technology and innovation.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn primary-btn">Contact Me</a>
+                    <!-- Using placeholder resume link for CV download -->
+                    <a href="#" class="btn secondary-btn" id="download-cv"><i class="fas fa-download"></i> Download CV</a>
+                </div>
+            </div>
+            <div class="hero-image-container fade-in-up delay-1">
+                <div class="image-border-glow"></div>
+                <div class="image-glass-frame">
+                    <img src="portfolio.jpeg" alt="Vishmiga Shree R" class="hero-profile-img">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about" aria-label="Scroll to About Section">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section scroll-offset">
+        <div class="section-header fade-in">
+            <span class="section-subtitle">Get to know me</span>
+            <h2 class="section-title">About <span class="accent">Me</span></h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="about-wrapper">
+            <div class="about-img-box fade-in delay-1">
+                <div class="about-glow"></div>
+                <div class="about-frame">
+                    <img src="portfolio.jpeg" alt="Vishmiga Shree R" class="about-img">
+                </div>
+            </div>
+            <div class="about-info glass-card fade-in delay-2">
+                <h3 class="about-greeting">I am Vishmiga Shree</h3>
+                <p>
+                    I am currently pursuing a Bachelor of Engineering in Computer Science and Engineering at Sri Krishna College of Engineering and Technology (SKCET). I am passionate about web development, programming, and continuous learning.
+                </p>
+                <p>
+                    I enjoy transforming ideas into functional, beautiful applications and actively participate in technical events, workshops, and hackathons to enhance my skills. My goal is to build software that is not only robust but also provides seamless user experiences.
+                </p>
+                <div class="about-details-grid">
+                    <div class="detail-item">
+                        <i class="fas fa-graduation-cap detail-icon"></i>
+                        <div>
+                            <span class="detail-label">Degree</span>
+                            <span class="detail-val">BE - Computer Science</span>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-map-marker-alt detail-icon"></i>
+                        <div>
+                            <span class="detail-label">Location</span>
+                            <span class="detail-val">Coimbatore, India</span>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-envelope detail-icon"></i>
+                        <div>
+                            <span class="detail-label">Email</span>
+                            <span class="detail-val">vishmigashree28@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-phone-alt detail-icon"></i>
+                        <div>
+                            <span class="detail-label">Phone</span>
+                            <span class="detail-val">+91 95978 55775</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section scroll-offset">
+        <div class="section-header fade-in">
+            <span class="section-subtitle">My Academic Journey</span>
+            <h2 class="section-title">Education <span class="accent">Timeline</span></h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+            
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item left-item fade-in-up">
+                <div class="timeline-dot-wrapper">
+                    <div class="timeline-dot"><i class="fas fa-university"></i></div>
+                </div>
+                <div class="timeline-card glass-card">
+                    <span class="time-period">2024 – Present</span>
+                    <h3>Bachelor of Engineering</h3>
+                    <h4 class="institution">Sri Krishna College of Engineering and Technology (SKCET)</h4>
+                    <p class="degree-details">BE Computer Science and Engineering</p>
+                    <p class="description">Currently pursuing core engineering principles, structures, algorithms, and software development methodologies at a premier institution.</p>
+                </div>
+            </div>
+
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item right-item fade-in-up">
+                <div class="timeline-dot-wrapper">
+                    <div class="timeline-dot"><i class="fas fa-school"></i></div>
+                </div>
+                <div class="timeline-card glass-card">
+                    <span class="time-period">Graduated 2024</span>
+                    <h3>Higher Secondary Education</h3>
+                    <h4 class="institution">Achyuta Academy</h4>
+                    <p class="score">Percentage: <strong class="score-highlight">75%</strong></p>
+                    <p class="description">Completed higher secondary education focusing on Physics, Chemistry, Mathematics, and Computer Science.</p>
+                </div>
+            </div>
+
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item left-item fade-in-up">
+                <div class="timeline-dot-wrapper">
+                    <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
+                </div>
+                <div class="timeline-card glass-card">
+                    <span class="time-period">Graduated 2022</span>
+                    <h3>Secondary Education</h3>
+                    <h4 class="institution">Luxor World School</h4>
+                    <p class="score">Percentage: <strong class="score-highlight">81%</strong></p>
+                    <p class="description">Completed foundational secondary schooling, developing a keen interest in science, computers, and mathematics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section scroll-offset">
+        <div class="section-header fade-in">
+            <span class="section-subtitle">What I am good at</span>
+            <h2 class="section-title">My <span class="accent">Skills</span></h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="skills-wrapper">
+            <!-- Skills Category 1 -->
+            <div class="skills-category-card glass-card fade-in-up">
+                <div class="category-header">
+                    <i class="fas fa-laptop-code category-icon"></i>
+                    <h3>Programming Languages</h3>
+                </div>
+                <div class="skills-list">
+                    <div class="skill-progress-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fab fa-java skill-mini-icon" style="color: #f89820;"></i> Java</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" data-progress="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-progress-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fas fa-terminal skill-mini-icon" style="color: #00599c;"></i> C++</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" data-progress="75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-progress-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fab fa-js skill-mini-icon" style="color: #f7df1e;"></i> JavaScript</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" data-progress="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-progress-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fas fa-database skill-mini-icon" style="color: #336791;"></i> SQL</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" data-progress="80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Category 2 -->
+            <div class="skills-category-card glass-card fade-in-up delay-1">
+                <div class="category-header">
+                    <i class="fas fa-globe category-icon"></i>
+                    <h3>Web Technologies</h3>
+                </div>
+                <div class="skills-list">
+                    <div class="skill-progress-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fab fa-html5 skill-mini-icon" style="color: #e34f26;"></i> HTML5</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" data-progress="95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-progress-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fab fa-css3-alt skill-mini-icon" style="color: #1572b6;"></i> CSS3 / Animations</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" data-progress="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-progress-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fab fa-js-square skill-mini-icon" style="color: #f7df1e;"></i> Modern JavaScript</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" data-progress="80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Category 3 -->
+            <div class="skills-category-card glass-card fade-in-up delay-2">
+                <div class="category-header">
+                    <i class="fas fa-brain category-icon"></i>
+                    <h3>Core Subjects</h3>
+                </div>
+                <div class="skills-list">
+                    <div class="skill-progress-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fas fa-project-diagram skill-mini-icon" style="color: #14b8a6;"></i> Data Structures</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" data-progress="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-progress-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fas fa-network-wired skill-mini-icon" style="color: #38bdf8;"></i> Algorithms</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" data-progress="75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section scroll-offset">
+        <div class="section-header fade-in">
+            <span class="section-subtitle">My Creative Work</span>
+            <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="projects-grid">
+            <!-- Project 1: Portfolio Website -->
+            <div class="project-card glass-card fade-in-up">
+                <div class="project-image-box">
+                    <div class="project-gradient-bg proj-bg-1"></div>
+                    <i class="fas fa-user-tie project-mock-icon"></i>
+                    <div class="project-overlay">
+                        <div class="overlay-links">
+                            <a href="#" class="overlay-link-btn" aria-label="Github Link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="overlay-link-btn" aria-label="Live Demo Link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <span class="project-tag">HTML, CSS, JS</span>
+                    <h3>Portfolio Website</h3>
+                    <p>Designed and developed a responsive personal portfolio website showcasing skills, achievements, education, and projects.</p>
+                    <div class="project-footer">
+                        <span class="tech-used"><i class="fas fa-code"></i> HTML5, CSS3, JS</span>
+                        <a href="#hero" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Company Website -->
+            <div class="project-card glass-card fade-in-up delay-1">
+                <div class="project-image-box">
+                    <div class="project-gradient-bg proj-bg-2"></div>
+                    <i class="fas fa-building project-mock-icon"></i>
+                    <div class="project-overlay">
+                        <div class="overlay-links">
+                            <a href="#" class="overlay-link-btn" aria-label="Github Link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="overlay-link-btn" aria-label="Live Demo Link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <span class="project-tag">React, Node, SQL</span>
+                    <h3>Company Website</h3>
+                    <p>Developed a professional company website featuring modern UI design, service pages, contact forms, and responsive layouts.</p>
+                    <div class="project-footer">
+                        <span class="tech-used"><i class="fas fa-code"></i> React, Node, MySQL</span>
+                        <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Blog Website -->
+            <div class="project-card glass-card fade-in-up delay-2">
+                <div class="project-image-box">
+                    <div class="project-gradient-bg proj-bg-3"></div>
+                    <i class="fas fa-blog project-mock-icon"></i>
+                    <div class="project-overlay">
+                        <div class="overlay-links">
+                            <a href="#" class="overlay-link-btn" aria-label="Github Link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="overlay-link-btn" aria-label="Live Demo Link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <span class="project-tag">HTML, CSS, JS</span>
+                    <h3>Blog Website</h3>
+                    <p>Built a dynamic blog platform allowing users to read and manage articles with a clean and user-friendly interface.</p>
+                    <div class="project-footer">
+                        <span class="tech-used"><i class="fas fa-code"></i> HTML, CSS, JavaScript</span>
+                        <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements & Certifications Section -->
+    <section id="achievements" class="achievements-section scroll-offset">
+        <div class="section-header fade-in">
+            <span class="section-subtitle">Credentials & Recognitions</span>
+            <h2 class="section-title">Achievements & <span class="accent">Certifications</span></h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="achievements-grid">
+            <!-- Card 1: Infosys Certifications -->
+            <div class="achievement-card glass-card fade-in-up">
+                <div class="achievement-icon-box">
+                    <i class="fas fa-certificate achievement-icon"></i>
+                </div>
+                <h3>Infosys Certifications</h3>
+                <ul class="achievement-list">
+                    <li>
+                        <i class="fas fa-award list-icon"></i>
+                        <span>Programming Using Java</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-award list-icon"></i>
+                        <span>Data Structures and Algorithm</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-award list-icon"></i>
+                        <span>Python By Example</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Card 2: NPTEL Certifications -->
+            <div class="achievement-card glass-card fade-in-up delay-1">
+                <div class="achievement-icon-box">
+                    <i class="fas fa-medal achievement-icon"></i>
+                </div>
+                <h3>NPTEL Certifications</h3>
+                <ul class="achievement-list">
+                    <li>
+                        <i class="fas fa-award list-icon"></i>
+                        <span>Soft Skills for Development</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-award list-icon"></i>
+                        <span>Python for Data Science</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Card 3: Workshops -->
+            <div class="achievement-card glass-card fade-in-up delay-2">
+                <div class="achievement-icon-box">
+                    <i class="fas fa-laptop-house achievement-icon"></i>
+                </div>
+                <h3>Technical Workshops</h3>
+                <div class="workshop-details">
+                    <h4 class="workshop-title">StudioX: Android Native Edition</h4>
+                    <p class="organizer"><i class="fas fa-users-cog"></i> Built & Organized by Kumaraguru College</p>
+                    <p class="workshop-desc">Hands-on technical workshop focused on native Android app development principles and ecosystem.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership & Activities Section -->
+    <section id="leadership" class="leadership-section scroll-offset">
+        <div class="section-header fade-in">
+            <span class="section-subtitle">Beyond Academics</span>
+            <h2 class="section-title">Leadership & <span class="accent">Activities</span></h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="leadership-timeline">
+            <!-- Activity 1 -->
+            <div class="leadership-card glass-card fade-in-up">
+                <div class="leadership-badge"><i class="fas fa-bullhorn"></i></div>
+                <div class="leadership-info">
+                    <span class="activity-date">2025</span>
+                    <h3>Organizer of Zenith 2025 – SKCET</h3>
+                    <p>
+                        Led Zenith 2025 Ideathon for first-year Computer Science and Engineering students focused on emerging technologies. Delivered an inspiring keynote session covering hackathons, academic culture, college life, and cultivating innovation.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Activity 2 -->
+            <div class="leadership-card glass-card fade-in-up delay-1">
+                <div class="leadership-badge"><i class="fas fa-network-wired"></i></div>
+                <div class="leadership-info">
+                    <span class="activity-date">2024</span>
+                    <h3>Organizer of Innovarium – SKCET</h3>
+                    <p>
+                        Active member of the organizing committee for the Innovarium Hackathon, conducted by the Computer Science and Engineering Department at Sri Krishna College of Engineering and Technology, coordinating events and ensuring smooth logistics.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Activity 3 -->
+            <div class="leadership-card glass-card fade-in-up delay-2">
+                <div class="leadership-badge"><i class="fas fa-running"></i></div>
+                <div class="leadership-info">
+                    <span class="activity-date">High School</span>
+                    <h3>Sports Captain – Luxor World School</h3>
+                    <p>
+                        Provided leadership, mentorship, and physical development support to students, promoting sportsmanship, discipline, resilience, team synergy, and physical well-being.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section scroll-offset">
+        <div class="section-header fade-in">
+            <span class="section-subtitle">Get in touch</span>
+            <h2 class="section-title">Contact <span class="accent">Me</span></h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="contact-wrapper">
+            <!-- Contact Details Card -->
+            <div class="contact-info-cards fade-in-up">
+                <!-- Info Card 1: Email -->
+                <div class="contact-detail-card glass-card">
+                    <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+                    <div class="detail-texts">
+                        <h4>Email</h4>
+                        <a href="mailto:vishmigashree28@gmail.com" class="detail-link">vishmigashree28@gmail.com</a>
+                    </div>
+                </div>
+
+                <!-- Info Card 2: Phone -->
+                <div class="contact-detail-card glass-card">
+                    <div class="icon-circle"><i class="fas fa-phone-alt"></i></div>
+                    <div class="detail-texts">
+                        <h4>Phone</h4>
+                        <a href="tel:+919597855775" class="detail-link">+91 95978 55775</a>
+                    </div>
+                </div>
+
+                <!-- Info Card 3: Location -->
+                <div class="contact-detail-card glass-card">
+                    <div class="icon-circle"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="detail-texts">
+                        <h4>Location</h4>
+                        <span class="detail-link">Coimbatore, Tamil Nadu, India</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form Card -->
+            <div class="contact-form-card glass-card fade-in-up delay-1">
+                <form id="contact-form" onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent (simulation).'); this.reset();">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="form-name">Name</label>
+                            <input type="text" id="form-name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">Email</label>
+                            <input type="email" id="form-email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-subject">Subject</label>
+                        <input type="text" id="form-subject" placeholder="Collaboration / Inquiry" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-message">Message</label>
+                        <textarea id="form-message" rows="5" placeholder="Write your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn submit-btn">Send Message <i class="fas fa-paper-plane btn-space-left"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3 class="footer-logo">Vishmiga<span class="accent">.</span></h3>
+            <p class="footer-tagline">Web Developer | Student</p>
+            <div class="footer-socials">
+                <a href="https://github.com/Vishmiga" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="copyright">&copy; 2025 Vishmiga Shree R. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Script connection -->
+    <script src="script.js"></script>
+</body>
+</html>
